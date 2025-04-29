@@ -1,0 +1,163 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #f0f4f7;
+  color: #333;
+  line-height: 1.6;
+}
+
+.hero {
+  position: relative;
+  height: 90vh;
+  background: url('img/sensor.jpeg') no-repeat center center/cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+  animation: fadeIn 2s ease-out;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+.hero .container {
+  position: relative;
+  z-index: 2;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.hero p {
+  font-size: 1.4rem;
+  margin-bottom: 2rem;
+  animation: fadeInUp 2s ease-out;
+}
+
+.btn {
+  background: #00c896;
+  color: white;
+  padding: 1rem 2.5rem;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: transform 0.3s ease, background 0.3s;
+}
+
+.btn:hover {
+  background: #20ff0c;
+  transform: scale(1.05);
+}
+
+.features {
+  background: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+}
+
+.features h2 {
+  font-size: 2.8rem;
+  color: #073b4c;
+  margin-bottom: 3rem;
+  animation: fadeInUp 1.5s ease-out;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+.feature-item {
+  background: #e8f9f3;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s;
+}
+
+.feature-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+.feature-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+  font-size: 1.8rem;
+  color: #00a676;
+  margin-bottom: 1rem;
+}
+
+.cta {
+  background: linear-gradient(135deg, #009f76, #00c896);
+  color: #fff;
+  padding: 5rem 2rem;
+}
+
+.cta h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  animation: fadeInUp 2s ease-out;
+}
+
+.cta p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.cta .btn {
+  background: white;
+  color: #00c896;
+  transition: transform 0.3s ease;
+}
+
+.cta .btn:hover {
+  background: #009f76;
+  color: white;
+  transform: scale(1.1);
+}
+
+footer {
+  background: #073b4c;
+  color: #dfe6e9;
+  font-size: 0.9rem;
+  padding: 2rem 0;
+  text-align: center;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
