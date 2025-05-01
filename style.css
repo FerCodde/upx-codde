@@ -24,6 +24,7 @@ body {
   color: #fff;
   text-align: center;
   animation: fadeIn 2s ease-out;
+  padding: 0 1rem;
 }
 
 .hero .overlay {
@@ -165,4 +166,51 @@ footer {
 @keyframes fadeInUp {
   0% { opacity: 0; transform: translateY(30px); }
   100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsividade para celular */
+@media (max-width: 768px) {
+  .hero {
+    height: auto;
+    padding: 4rem 1rem;
+    background-attachment: scroll;
+    text-align: center;
+  }
+
+  .hero h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 0.8rem 2rem;
+  }
+
+  .features {
+    padding: 4rem 1rem;
+  }
+
+  .features h2 {
+    font-size: 2rem;
+  }
+
+  .feature-item h3 {
+    font-size: 1.5rem;
+  }
+
+  .cta h2 {
+    font-size: 2rem;
+  }
+
+  .cta p {
+    font-size: 1.1rem;
+  }
+
+  .feature-item img {
+    height: 150px;
+  }
 }
